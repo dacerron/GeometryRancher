@@ -3,7 +3,7 @@ A game built in Unity, incorporating genealogy concepts into a tongue-in-cheek g
 
 ## Concept
 
-This game is based on biology's [Punnet square](https://en.wikipedia.org/wiki/Punnett_square) into an interactive shape sandbox where polyhedrons have different weighted rarities. It is an educational, tongue-in-cheek play on popular farming simulation and gacha games encouraging users to find rare combinations of geometric features.
+This game is based on biology's [Punnet square](https://en.wikipedia.org/wiki/Punnett_square). It is an interactive shape sandbox where polyhedrons have different weighted rarities. It is an educational, tongue-in-cheek play on popular farming simulation and gacha games encouraging users to find rare combinations of geometric features.
 
 As a Geometry Rancher, your goal is to breed a Legendary version of each of the polyhedron, relying on combining the right shapes together and hitting the mutation chance. 
 
