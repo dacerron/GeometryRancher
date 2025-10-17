@@ -3,9 +3,9 @@ A game built in Unity, incorporating genealogy concepts into a tongue-in-cheek g
 
 ## Concept
 
-This game incorporates aspects of genealogy into an interactive shape sandbox where shapes have different weighte rarities. It is a fun way to learn about breeding in a tongue-in-cheek fashion.
+This game is based on biology's [https://en.wikipedia.org/wiki/Punnett_square](Punnet square) into an interactive shape sandbox where polyhedrons have different weighted rarities. It is an educational, tongue-in-cheek play on popular farming simulation and gacha games encouraging users to find rare combinations of geometric features.
 
-The goal of the game is to have a Legendary version of each of the shapes, relying on combining the right shapes together and hitting the mutation chance.
+As a Geometry Rancher, your goal is to breed a Legendary version of each of the polyhedron, relying on combining the right shapes together and hitting the mutation chance. 
 
 ## Features
 
@@ -14,7 +14,7 @@ This inventory is generated from the inventory.json file, colocated with the exe
 
 
 ### Drag and Drop
-The shapes can be dragged and dropped using Unity UI EvenSystem events. Dragging a shape uses a raycast into the scene to dictate the shape's position. Raycasting onto an inventory slot locks the shape there, and updates the inventory system accordingly. Doing this also writes to inventory.json, saving the inventory to a path that persists between sessions. The same happens when a shape is removed from the inventory
+The shapes can be dragged and dropped using Unity UI EventSystem events. Dragging a shape uses a raycast into the scene to dictate the shape's position. Raycasting onto an inventory slot locks the shape there, and updates the inventory system accordingly. Doing this also writes to inventory.json, saving the inventory to a path that persists between sessions. The same happens when a shape is removed from the inventory
 
 ### Generated shapes
 Each shape is created using two variables, their model and their rarity. this dictaes what they look like, models giving different shapes and rarities giving the shape their color. Each rarity is weighted differently, going from Common to Legendary.
