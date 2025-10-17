@@ -12,7 +12,6 @@ As a Geometry Rancher, your goal is to breed a Legendary version of each of the 
 ### Inventory
 This inventory is generated from the inventory.json file, colocated with the executable. This file stores InventoryItem information, which gets used to generate inventory slots and fill them with the correct shapes. Changing this json file will change the starting inventory, thus changing the difficulty of the game. Note that the shape data and rarity data are case sensitive and must be spelled correctly. Here are the shapes: "Sphere", "Pyramid", "Ico", Dod", "Cube" and here are the rarities: "Common", "Uncommon", "Magic", "Rare", "Legendary"
 
-
 ### Drag and Drop
 The shapes can be dragged and dropped using Unity UI EventSystem events. Dragging a shape uses a raycast into the scene to dictate the shape's position. Raycasting onto an inventory slot locks the shape there, and updates the inventory system accordingly. Doing this also writes to inventory.json, saving the inventory to a path that persists between sessions. The same happens when a shape is removed from the inventory
 
@@ -21,7 +20,8 @@ Each shape is created using two variables, their model and their rarity. This di
 
 ### Combining shapes
 In the bottom left, you can combine two shapes to create a new one, inheriting aspects from both inputs. Here the rarity weights are used such that combining two shapes of similar rarity gives a better chance of having the higher rarity than if you combine a Common with a Legendary, for example.
-There is also a mutation chance, where rarity can be upgraded by one rank with 5% probability. The rarity weights go from 0.4 for Common to 0.05 for Legendary.
+There is also a mutation chance, where rarity can be upgraded by one rank with 5% probability. The rarity weights go from 0.4 for Common to 0.05 for Legendary. What shape you will get from each combination is dictated by the polyhedrons of the inputs and the rarity of the inputs. 
+If you use two of the same shape, you will always get the same shape out, but otherwise you are equally likely to get one or the other. The rarities with the higher weights are more likely to appear than the rarities with the lower weights. For example, if you combine a Common Cube with an Uncommon Cube, you have a 61% chance to get a Common Cube and a 39% chance to get an Uncommon Cube. If you instead do a Common Cube with a Rare Cube, your likelihood for a Rare Cube is only 20%. The probabilities are then split evenly between both shapes if you combine two different shapes. The weights for the rarites are all stored in a Dictionary, and can be adjusted to change the game balance.
 
 ### Physics sandbox
 I made the shapes have rigidbodies when dropped in the center, so that it would feel fun to generate shapes and throw them in the middle, and after some time of gameplay they interact with each other more, giving the user a colorful landscape of shapes. The shapes also maintain velocity when thrown around, interacting with other physics-enabled shapes in the center.
