@@ -1,7 +1,7 @@
 # GeometryRancher
 A game built in Unity, incorporating genealogy concepts into a tongue-in-cheek gacha game.
 
-[Proof the Legendary Exists](https://github.com/dacerron/GeometryRancher/blob/main/GeoRanch.png)
+![Proof the Legendary Exists](https://github.com/dacerron/GeometryRancher/blob/main/GeoRanch.png)
 
 ## Concept
 
