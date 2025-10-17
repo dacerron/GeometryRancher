@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:ListView name="ListView" virtualization-method="DynamicHeight" style="height: 307px;" />
+        <ui:Label text="Label" style="height: 32px; width: 278px; top: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

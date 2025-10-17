@@ -1,0 +1,37 @@
+{
+    "size": 8,
+    "items": [
+        {
+            "rarity": "Common",
+            "shape": "Cube"
+        },
+        {
+            "rarity": "Common",
+            "shape": "Ico"
+        },
+        {
+            "rarity": "Common",
+            "shape": "Sphere"
+        },
+        {
+            "rarity": "Common",
+            "shape": "Sphere"
+        },
+        {
+            "rarity": "Magic",
+            "shape": "Dod"
+        },
+        {
+            "rarity": "Uncommon",
+            "shape": "Dod"
+        },
+        {
+            "rarity": "Uncommon",
+            "shape": "Dod"
+        },
+        {
+            "rarity": "Uncommon",
+            "shape": "Dod"
+        }
+    ]
+}
