@@ -17,10 +17,10 @@ This inventory is generated from the inventory.json file, colocated with the exe
 The shapes can be dragged and dropped using Unity UI EventSystem events. Dragging a shape uses a raycast into the scene to dictate the shape's position. Raycasting onto an inventory slot locks the shape there, and updates the inventory system accordingly. Doing this also writes to inventory.json, saving the inventory to a path that persists between sessions. The same happens when a shape is removed from the inventory
 
 ### Generated shapes
-Each shape is created using two variables, their model and their rarity. this dictaes what they look like, models giving different shapes and rarities giving the shape their color. Each rarity is weighted differently, going from Common to Legendary.
+Each shape is created using two variables, their model and their rarity. This dictates what they look like, models giving different shapes and rarities giving the shape their color. Each rarity is weighted differently, going from Common to Legendary.
 
 ### Combining shapes
-In the bottom right, you can combine two shapes to create a new one, inheriting aspects from both inputs. Here the rarity weights are used such that combining two shapes of similar rarity gives a better chance of having the higher rarity than if you combine a Common with a Legendary, for example.
+In the bottom left, you can combine two shapes to create a new one, inheriting aspects from both inputs. Here the rarity weights are used such that combining two shapes of similar rarity gives a better chance of having the higher rarity than if you combine a Common with a Legendary, for example.
 There is also a mutation chance, where rarity can be upgraded by one rank with 5% probability. The rarity weights go from 0.4 for Common to 0.05 for Legendary.
 
 ### Physics sandbox
