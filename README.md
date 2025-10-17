@@ -1,5 +1,5 @@
 # GeometryRancher
-A game built in Unity, incorporating genealogy concepts into a tongue-in-cheek gacha game.
+A game built in Unity, incorporating genealogy concepts into a tongue-in-cheek gacha game. Built in Unity Version 6000.2.8f1
 
 ![Proof the Legendary Exists](https://github.com/dacerron/GeometryRancher/blob/main/GeoRanch.png)
 
@@ -8,6 +8,9 @@ A game built in Unity, incorporating genealogy concepts into a tongue-in-cheek g
 This game is based on biology's [Punnet square](https://en.wikipedia.org/wiki/Punnett_square). It is an interactive shape sandbox where polyhedrons have different weighted rarities. It is an educational, tongue-in-cheek play on popular farming simulation and gacha games encouraging users to find rare combinations of geometric features.
 
 As a Geometry Rancher, your goal is to breed a Legendary version of each of the polyhedrons, relying on combining the right shapes together and hitting the mutation chance. 
+
+## How to run
+Unzip GeometryRancher.zip to your directory of choice on a Windows computer, and open the included .exe file. Make sure to keep it in this folder and don't move the .exe out. If you wish to edit the starting inventory, edit the inventory.json file as instructed below.
 
 ## Features
 
